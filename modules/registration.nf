@@ -42,7 +42,7 @@ workflow registration {
 
     main:
       rawst = raw.toSortedList{a, b -> a[0] <=> b[0]}.transpose()
-      sampleName  = file(params.in).name
+      sampleName  = file(params.in)
 
       ashlar(
         mcp,
